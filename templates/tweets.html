@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/tweets.css') }}">{% endblock %}
+{% block body %}
+    <h1>Tweets List</h1>
+    <div class="tbl-header">
+        <table class="product">
+            <thead class="tbl-header">
+            <tr>
+                <th>URL</th>
+                <th>ID</th>
+                <th>Text</th>
+                <th>Retweet Count</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table id="product-table-body">
+            <tbody>
+            {% for tweet in tweets %}
+                <tr class="product-row">
+                    <td>
+                        <a class="product-title" href="{{ tweet.source_url }}">{{ tweet.source_url }}</a>
+                    </td>
+                    <td>{{ tweet.id }}</td>
+                    <td>{{ tweet.text }}</td>
+                    <td>{{ tweet.retweet_count }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

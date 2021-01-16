@@ -1,0 +1,80 @@
+h1{
+  font-size: 30px;
+  color: #283965;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.product-title{
+  font-weight: 900;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+
+ }
+.tbl-content{
+  height:100vh;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.tbl-content>.product-title{
+  cursor: pointer;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+tr:hover {
+  background-color:rgba(255,255,255,0.3);
+  border-color:#00BDE8;
+  color: black;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+body{
+  background-image: linear-gradient(135deg, rgba(76, 208, 143, 0.36) 0%, rgba(76, 208, 143, 0.36) 14.286%,rgba(67, 177, 138, 0.36) 14.286%, rgba(67, 177, 138, 0.36) 28.572%,rgba(57, 146, 133, 0.36) 28.572%, rgba(57, 146, 133, 0.36) 42.858%,rgba(48, 116, 128, 0.36) 42.858%, rgba(48, 116, 128, 0.36) 57.144%,rgba(38, 85, 123, 0.36) 57.144%, rgba(38, 85, 123, 0.36) 71.42999999999999%,rgba(29, 54, 118, 0.36) 71.43%, rgba(29, 54, 118, 0.36) 85.71600000000001%,rgba(19, 23, 113, 0.36) 85.716%, rgba(19, 23, 113, 0.36) 100.002%),linear-gradient(45deg, rgb(201, 54, 234) 0%, rgb(201, 54, 234) 16.667%,rgb(173, 57, 207) 16.667%, rgb(173, 57, 207) 33.334%,rgb(146, 60, 179) 33.334%, rgb(146, 60, 179) 50.001000000000005%,rgb(118, 62, 152) 50.001%, rgb(118, 62, 152) 66.668%,rgb(91, 65, 124) 66.668%, rgb(91, 65, 124) 83.33500000000001%,rgb(63, 68, 97) 83.335%, rgb(63, 68, 97) 100.002%);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+
+/* for custom scrollbar for webkit browser*/
+.tbl-content::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+    border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.tbl-content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.tbl-content::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	background-color: #000000;
+}
